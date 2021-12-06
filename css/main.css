@@ -1,21 +1,29 @@
 /**** BASE STYLES ****/
 
+:root {
+    --offwhite:#F2F2F2;
+    --auburn:#BF7256;
+    --grey:#BFBCBA;
+    --brown:#A69C8A;
+    --olive:#BDBF8A;
+    --rosegolden:#FCD0B7;
+}
+
 body {
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: 'Source Sans Pro', serif;
     color:#2b2b2b;
 }
 
 /**** GRID ****/
 
-.full-width{
+.full-width {
     width: 1200px;
     margin: 0 auto;
-    overflow:auto;
+    overflow: auto;
 }
 
 .half-width {
     width: 600px;
-    /* color:#bbc085; */
     float: left;
 }
 
@@ -26,24 +34,23 @@ body {
 
 /**** HEADER ****/
 
-header {    
-    background-image:url(../img/bg.png);
-    height: 800px;
-    background-position: center;
+header {
+    height:800px;
+    background: url(../img/bg.png);
     background-size: cover;
+    background-position: center;
 }
 
 header h1 {
+    padding: 65px 0 65px 25px;
     font-family: 'Lora', serif;
     font-size: 30px;
-    color: #bbc085;
-    padding: 65px 0 65px 25px;
-    text-decoration: none;
+    color:#bbc085;
 }
 
 nav {
-    float: right;
-    padding: 85px 25px;
+    float:right;
+    padding: 75px 25px;
 }
 
 nav ul li {
@@ -54,17 +61,24 @@ nav ul li a {
     text-transform: uppercase;
     text-decoration: none;
     font-size: 18px;
-    color: #9b9b9b;
-    padding-left: 80px;
+    color: #9b9b9b ;
+    padding-left: 40px;
 }
 
-header h2 {
-    width: 1000px;
-    clear: both;
-    font-family: 'Lora',serif;
+nav ul li a:hover {
+    color:black;
+}
+
+.projects {
+    color:var(--auburn)
+}
+
+h2 {
+    clear:both;
+    font-family: 'Lora', serif;
     font-size: 72px;
     line-height: 80px;
-    color: #9b9b9b;
+    color:#9b9b9b;
     padding: 20px 0 20px 25px;
 }
 
@@ -74,7 +88,7 @@ header h2 span {
 
 /**** ABOUT ****/
 
-#about .full-width{
+#about .full-width {
     padding: 80px 0;
 }
 
@@ -82,28 +96,22 @@ header h2 span {
     font-family: 'Lora', serif;
     font-size: 36px;
     padding-left: 50px;
+    color:black;
 }
 
 #about p {
-    font-size: 28px;
-    color: #7f7f7f;
+    font-size: 21px;
+    color:#7f7f7f;
     line-height: 40px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
-#about .half-width-two {
-    padding-top: 80px;
-}
-
 /**** WORK ****/
 
 #work {
-    /* background-color:#f9ceb7; */
+    background-color: #f9ceb7;
     text-align: center;
-    height: 450px;
-    padding-top: 50px;
-    background-image: url(../img/color.png);
 }
 
 #work .full-width {
@@ -128,30 +136,25 @@ header h2 span {
     padding: 0 50px;
 }
 
-#work .third-width {
-    padding-left: 80px;
-}
-
 /**** CONTACT ****/
 
 #contact {
     background-color: #ebebeb;
-    height: 600px;
 }
 
-#contact .full-width {
+#contact .full-width{
     padding: 110px 0;
 }
 
 #contact img#contact-img {
     margin-left: 25px;
-    border:12px solid #fff;
-    width: 500px;
-    height: 344px;
-    background-size: cover;
+    border: 12px solid #ffffff;
+    width: 470px;
+    height: 300px;
+    margin-top: 5px;
 }
 
-#contact h2, #contact #email-header, #contact, #socialmedia-header, #contact ul {
+#contact h2, #contact #email-header, #contact #socialmedia-header, #contact ul {
     padding-left: 115px;
 }
 
@@ -160,30 +163,33 @@ header h2 span {
 }
 
 #contact h2 {
-    font-family: 'Lora', serif;
+    font-family:'Lora', serif;
     font-size: 36px;
-    left: 44px;
+    line-height: 44px;
+    color:black;
 }
 
 #contact #email-header {
     font-size: 32px;
     font-weight: 400;
     line-height: 44px;
-    margin: -30px 0px 5px 0;
+    margin: -30px 0 5px 0;
+    color:black;
 }
 
 #contact #socialmedia-header {
-    font-weight: bold;
+    font-weight: 700;
     font-size: 29px;
     line-height: 44px;
     margin: 40px 0 0 0;
+    color:black;
 }
 
 #contact a {
     text-decoration: none;
     color:#c49075;
     font-weight: bold;
-    font-size: 32px;
+    font-size: 28px;
 }
 
 #contact ul {
@@ -191,12 +197,28 @@ header h2 span {
 }
 
 #contact ul li {
-    display: inline-block;
+    display:inline-block;
 }
 
 #contact ul img {
     padding-right: 48px;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
